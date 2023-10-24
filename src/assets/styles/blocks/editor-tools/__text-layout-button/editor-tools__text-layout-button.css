@@ -1,0 +1,15 @@
+.editor-tools__text-layout-button {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ffffff;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  background-image: url("../../../../img/up_icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px 8px;
+  position: absolute;
+}

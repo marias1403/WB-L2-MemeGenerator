@@ -1,0 +1,7 @@
+.editor-tools__text-layout-button_down {
+  background-image: url("../../../../../img/down_icon.svg");
+  background-size: 12px 8px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}

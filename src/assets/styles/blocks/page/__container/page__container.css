@@ -1,0 +1,11 @@
+.page__container {
+  min-width: 320px;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  justify-items: stretch;
+  align-items: stretch;
+}

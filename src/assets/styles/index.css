@@ -1,2 +1,28 @@
 @import url(../../vendor/normalize.css);
 @import url(../../vendor/fonts.css);
+
+@import url(./blocks/page/page.css);
+@import url(./blocks/page/__container/page__container.css);
+@import url(./blocks/page/__aside/page__aside.css);
+
+@import url(./blocks/header/header.css);
+@import url(./blocks/header/__logo/header__logo.css);
+@import url(./blocks/editor-tools/editor-tools.css);
+@import url(./blocks/editor-tools/__title/editor-tools__title.css);
+@import url(./blocks/editor-tools/__text-input/editor-tools__text-input.css);
+@import url(./blocks/editor-tools/__button/editor-tools__button.css);
+@import url(./blocks/editor-tools/__layout-button-container/editor-tools__layout-button-container.css);
+@import url(./blocks/editor-tools/__text-layout-button/editor-tools__text-layout-button.css);
+@import url(./blocks/editor-tools/__text-layout-button/_top/editor-tools__text-layout-button_top.css);
+@import url(./blocks/editor-tools/__text-layout-button/_right/editor-tools__text-layout-button_right.css);
+@import url(./blocks/editor-tools/__text-layout-button/_down/editor-tools__text-layout-button_down.css);
+@import url(./blocks/editor-tools/__text-layout-button/_left/editor-tools__text-layout-button_left.css);
+@import url(./blocks/editor-tools/__save-button/editor-tools__save-button.css);
+
+@import url(./blocks/editing-area/editing-area.css);
+@import url(./blocks/editing-area/__container/editing-area__container.css);
+@import url(./blocks/editing-area/__button/editing-area__button.css);
+
+@import url(./blocks/footer/footer.css);
+@import url(./blocks/page/__footer/page__footer.css);
+@import url(./blocks/footer/__text/footer__text.css);

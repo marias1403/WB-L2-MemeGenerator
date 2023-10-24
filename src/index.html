@@ -7,7 +7,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title lang="ru">Архипова Мария, Генератор мемов</title>
 </head>
-<body>
-
+<body class="page">
+  <div class="page__container">
+    <div class="page__aside">
+      <header class="header">
+        <img class="header__logo" src="<%=require('./assets/img/logo.svg')%>" alt="Лого" />
+      </header>
+      <section class="editor-tools">
+        <div>
+          <label class="editor-tools__title" for="text-input">Введите текст</label>
+          <input
+            class="editor-tools__text-input"
+            id="text-input"
+            type="text"
+            minlength="1"
+            maxlength="100"
+          />
+          <button class="editor-tools__button">Добавить</button>
+        </div>
+        <div>
+          <label class="editor-tools__title">Шрифт и размер</label>
+          <select>
+            <option value="0">Arial</option>
+            <option value="1">Audi</option>
+            <option value="2">BMW</option>
+            <option value="3">Citroen</option>
+            <option value="4">Ford</option>
+            <option value="5">Honda</option>
+          </select>
+          <div class="quantity-input">
+            <button class="quantity-input__button" data-action="minus" type="button">–</button>
+            <input class="quantity-input__count" type="number" name="product-qty" min="0" max="999" disabled>
+            <button class="quantity-input__button" data-action="add" type="button">+</button>
+          </div>
+        </div>
+        <div>
+          <h3 class="editor-tools__title">Жирность и курсив</h3>
+          <button>B</button>
+          <button>I</button>
+        </div>
+        <div>
+          <h3 class="editor-tools__title">Выравнивание текста</h3>
+          <select>
+            <option value="0">по центру</option>
+            <option value="1">по левому краю</option>
+            <option value="2">по правому краю</option>
+          </select>
+        </div>
+        <div>
+          <h3 class="editor-tools__title">Расположение текста</h3>
+          <div class="editor-tools__layout-button-container">
+            <button class="editor-tools__text-layout-button editor-tools__text-layout-button_top"></button>
+            <button class="editor-tools__text-layout-button editor-tools__text-layout-button_right"></button>
+            <button class="editor-tools__text-layout-button editor-tools__text-layout-button_down"></button>
+            <button class="editor-tools__text-layout-button editor-tools__text-layout-button_left"></button>
+          </div>
+        </div>
+        <button class="editor-tools__save-button">Cохранить</button>
+      </section>
+      <footer class="footer page__footer">
+        <p class="footer__text">Генератор мемов, Архипова Мария для WB</p>
+      </footer>
+    </div>
+    <div class="editing-area">
+      <div class="editing-area__container"></div>
+      <button class="editing-area__button">+ добавить картинку</button>
+    </div>
+  </div>
 </body>
 </html>

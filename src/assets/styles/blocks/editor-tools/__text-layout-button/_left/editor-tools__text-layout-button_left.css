@@ -1,0 +1,7 @@
+.editor-tools__text-layout-button_left {
+  background-image: url("../../../../../img/left_icon.svg");
+  background-size: 8px 12px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
