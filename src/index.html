@@ -26,33 +26,57 @@
           <button class="editor-tools__button">Добавить</button>
         </div>
         <div>
-          <label class="editor-tools__title">Шрифт и размер</label>
-          <select>
-            <option value="0">Arial</option>
-            <option value="1">Audi</option>
-            <option value="2">BMW</option>
-            <option value="3">Citroen</option>
-            <option value="4">Ford</option>
-            <option value="5">Honda</option>
-          </select>
-          <div class="quantity-input">
-            <button class="quantity-input__button" data-action="minus" type="button">–</button>
-            <input class="quantity-input__count" type="number" name="product-qty" min="0" max="999" disabled>
-            <button class="quantity-input__button" data-action="add" type="button">+</button>
+          <label class="editor-tools__title" for="edit-font">Шрифт</label>
+          <label class="editor-tools__title" for="edit-text-size">и размер</label>
+          <div class="editor-tools__font-size-controls">
+            <div class="custom-select">
+              <div class="select-box">
+                <span class="selected-option">Arial</span>
+                <ul class="options">
+                  <li class="option" data-value="0">Arial</li>
+                  <li class="option" data-value="1">Comic Sans</li>
+                  <li class="option" data-value="2">Courier New</li>
+                  <li class="option" data-value="3">Georgia</li>
+                </ul>
+              </div>
+              <select id="edit-font" class="hidden-select">
+                <option value="0">Arial</option>
+                <option value="1">Comic Sans</option>
+                <option value="2">Courier New</option>
+                <option value="3">Georgia</option>
+              </select>
+            </div>
+            <div class="text-size-input">
+              <button class="text-size-input__button" data-action="minus" type="button">–</button>
+              <input class="text-size-input__count" id="edit-text-size" type="text" name="text-size" min="8" max="96" value="16" disabled>
+              <button class="text-size-input__button" data-action="add" type="button">+</button>
+            </div>
           </div>
         </div>
         <div>
           <h3 class="editor-tools__title">Жирность и курсив</h3>
-          <button>B</button>
-          <button>I</button>
+          <div class="editor-tools__typography">
+            <button class="editor-tools__typography-button">B</button>
+            <button class="editor-tools__typography-button editor-tools__typography-button_italic">I</button>
+          </div>
         </div>
         <div>
-          <h3 class="editor-tools__title">Выравнивание текста</h3>
-          <select>
-            <option value="0">по центру</option>
-            <option value="1">по левому краю</option>
-            <option value="2">по правому краю</option>
-          </select>
+          <label class="editor-tools__title" for="text-align">Выравнивание текста</label>
+          <div class="custom-select editor-tools__select">
+            <div class="select-box">
+              <span class="selected-option">по центру</span>
+              <ul class="options">
+                <li class="option" data-value="0">по центру</li>
+                <li class="option" data-value="1">по левому краю</li>
+                <li class="option" data-value="2">по правому краю</li>
+              </ul>
+            </div>
+            <select id="text-align" class="hidden-select">
+              <option value="0">по центру</option>
+              <option value="1">по левому краю</option>
+              <option value="2">по правому краю</option>
+            </select>
+          </div>
         </div>
         <div>
           <h3 class="editor-tools__title">Расположение текста</h3>
@@ -63,7 +87,7 @@
             <button class="editor-tools__text-layout-button editor-tools__text-layout-button_left"></button>
           </div>
         </div>
-        <button class="editor-tools__save-button">Cохранить</button>
+        <button class="editor-tools__save-button">Сохранить</button>
       </section>
       <footer class="footer page__footer">
         <p class="footer__text">Генератор мемов, Архипова Мария для WB</p>

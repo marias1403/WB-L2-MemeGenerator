@@ -5,3 +5,7 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
+.editor-tools__text-layout-button_down:active {
+  background-image: url("../../../../../img/down_icon_active.svg");
+}

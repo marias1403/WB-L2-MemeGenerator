@@ -1,5 +1,11 @@
 .editor-tools__text-layout-button_top {
+  background-image: url("../../../../../img/up_icon.svg");
+  background-size: 12px 8px;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.editor-tools__text-layout-button_top:active {
+  background-image: url("../../../../../img/up_icon_active.svg");
 }

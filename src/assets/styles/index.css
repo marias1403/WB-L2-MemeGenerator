@@ -18,6 +18,14 @@
 @import url(./blocks/editor-tools/__text-layout-button/_down/editor-tools__text-layout-button_down.css);
 @import url(./blocks/editor-tools/__text-layout-button/_left/editor-tools__text-layout-button_left.css);
 @import url(./blocks/editor-tools/__save-button/editor-tools__save-button.css);
+@import url(./blocks/editor-tools/__select/editor-tools__select.css);
+@import url(./blocks/editor-tools/__typography/editor-tools__typography.css);
+@import url(./blocks/editor-tools/__typography-button/editor-tools__typography-button.css);
+@import url(./blocks/editor-tools/__typography-button/_italic/editor-tools__typography-button_italic.css);
+
+@import url(./blocks/custom-select/custom-select.css);
+@import url(./blocks/text-size-input/text-size-input.css);
+@import url(./blocks/editor-tools/__font-size-controls/editor-tools__font-size-controls.css);
 
 @import url(./blocks/editing-area/editing-area.css);
 @import url(./blocks/editing-area/__container/editing-area__container.css);

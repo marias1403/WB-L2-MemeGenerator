@@ -1,0 +1,21 @@
+.editor-tools__typography-button {
+  margin: 0;
+  padding: 8px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.editor-tools__typography-button:active {
+  border: 1px solid #7BFF2B;
+  color: #7BFF2B;
+}

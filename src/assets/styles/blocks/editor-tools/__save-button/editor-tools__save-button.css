@@ -15,3 +15,7 @@
   text-transform: lowercase;
   cursor: pointer;
 }
+
+.editor-tools__save-button:active {
+  background-color: #4DCC00;
+}
