@@ -13,7 +13,7 @@
       <header class="header">
         <img class="header__logo" src="<%=require('./assets/img/logo.svg')%>" alt="Лого" />
       </header>
-      <section class="editor-tools">
+      <section class="editor-tools page__section">
         <div>
           <label class="editor-tools__title" for="text-input">Введите текст</label>
           <input
@@ -30,6 +30,12 @@
           <label class="editor-tools__title" for="edit-text-size">и размер</label>
           <div class="editor-tools__font-size-controls">
             <div class="custom-select">
+              <select id="edit-font" class="hidden-select">
+                <option value="0">Arial</option>
+                <option value="1">Comic Sans</option>
+                <option value="2">Courier New</option>
+                <option value="3">Georgia</option>
+              </select>
               <div class="select-box">
                 <span class="selected-option">Arial</span>
                 <ul class="options">
@@ -39,12 +45,6 @@
                   <li class="option" data-value="3">Georgia</li>
                 </ul>
               </div>
-              <select id="edit-font" class="hidden-select">
-                <option value="0">Arial</option>
-                <option value="1">Comic Sans</option>
-                <option value="2">Courier New</option>
-                <option value="3">Georgia</option>
-              </select>
             </div>
             <div class="text-size-input">
               <button class="text-size-input__button" data-action="minus" type="button">–</button>
