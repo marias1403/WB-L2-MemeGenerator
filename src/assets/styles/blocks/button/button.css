@@ -1,4 +1,4 @@
-.editor-tools__save-button {
+.button {
   margin: 0;
   padding: 10px 15px;
   border: none;
@@ -16,6 +16,6 @@
   cursor: pointer;
 }
 
-.editor-tools__save-button:active {
+.button:active {
   background-color: #4DCC00;
 }

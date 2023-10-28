@@ -21,12 +21,12 @@
 @import url(./blocks/editor-tools/__text-layout-button/_right/editor-tools__text-layout-button_right.css);
 @import url(./blocks/editor-tools/__text-layout-button/_down/editor-tools__text-layout-button_down.css);
 @import url(./blocks/editor-tools/__text-layout-button/_left/editor-tools__text-layout-button_left.css);
-@import url(./blocks/editor-tools/__save-button/editor-tools__save-button.css);
 @import url(./blocks/editor-tools/__typography/editor-tools__typography.css);
 @import url(./blocks/editor-tools/__typography-button/editor-tools__typography-button.css);
 @import url(./blocks/editor-tools/__typography-button/_italic/editor-tools__typography-button_italic.css);
 @import url(./blocks/editor-tools/__wrapper/editor-tools__wrapper.css);
 
+@import url(./blocks/button/button.css);
 @import url(./blocks/checkbox/checkbox.css);
 @import url(./blocks/select/select.css);
 @import url(./blocks/text-size-input/text-size-input.css);

@@ -3,6 +3,33 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(fonts/Unbounded-Regular.woff2) format("woff2"),
-  url(fonts/Unbounded-Regular.woff) format("woff");
+  src: url(fonts/Unbounded-Regular.woff2) format('woff2'),
+  url(fonts/Unbounded-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Comic Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/ComicSans.woff2) format('woff2'),
+  url(fonts/ComicSans.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Courier New';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/CourierNew.woff2) format('woff2'),
+  url(fonts/CourierNew.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/Georgia.woff2) format('woff2'),
+  url(fonts/Georgia.woff) format('woff');
 }
