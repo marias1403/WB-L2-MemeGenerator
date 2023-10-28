@@ -1,24 +1,7 @@
 import '../assets/styles/index.css';
 
 document.addEventListener('DOMContentLoaded', () => {
-  const selectBox = document.querySelector('.select .select-box');
-  const options = document.querySelectorAll('.select .options .option');
-  const hiddenSelect = document.querySelector('.select .hidden-select');
-
-  selectBox.addEventListener('click', () => {
-    selectBox.classList.toggle('active');
-  });
-
-  options.forEach((option) => {
-    option.addEventListener('click', () => {
-      selectBox.querySelector('.selected-option').textContent = option.textContent;
-      hiddenSelect.value = option.getAttribute('data-value');
-      selectBox.classList.remove('active');
-    });
-  });
-
   let selectedTextElement = null;
-
   const btnAddText = document.getElementById("add-text-btn");
   const memeContainer = document.getElementById("meme-container");
   const alignTopBtn = document.getElementById("align-top");
@@ -160,5 +143,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     selectedTextElement.remove();
     selectedTextElement = null;
+  });
+
+  const tooltipIcon = document.getElementById('tooltip-icon');
+  const tooltip = document.getElementById('tooltip');
+
+  tooltipIcon.addEventListener('mouseover', () => {
+    tooltip.style.display = 'block';
+  });
+
+  tooltipIcon.addEventListener('mouseout', () => {
+    tooltip.style.display = 'none';
   });
 });

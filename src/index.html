@@ -24,7 +24,7 @@
           maxlength="100"
         />
       </div>
-      <div class="editor-tools__color-change">
+      <div class="editor-tools__wrapper">
         <label class="editor-tools__title" for="text-color">Цвет</label>
         <input type="color" id="text-color" value="#ffffff">
       </div>
@@ -46,14 +46,14 @@
         </div>
       </div>
       <div class="editor-tools__typography">
-        <div class="editor-tools__checkbox-wrapper">
+        <div class="editor-tools__wrapper">
           <label for="bold" class="editor-tools__title">Жирность</label>
           <div class="checkbox">
             <input class="checkbox__input" type="checkbox" id="bold">
             <span class="checkbox__checkmark"></span>
           </div>
         </div>
-        <div class="editor-tools__checkbox-wrapper">
+        <div class="editor-tools__wrapper">
           <label for="italic" class="editor-tools__title">Курсив</label>
           <div class="checkbox">
             <input class="checkbox__input" type="checkbox" id="italic">
@@ -63,7 +63,13 @@
       </div>
       <button id="add-text-btn" class="editor-tools__button">Добавить текст</button>
       <div>
-        <h3 class="editor-tools__title">Расположение текста</h3>
+        <div class="editor-tools__wrapper">
+          <h3 class="editor-tools__title">Расположение текста</h3>
+          <div class="tooltip">
+            <img id="tooltip-icon" class="tooltip__icon" src="<%=require('./assets/img/question_icon.svg')%>" alt="Иконка вопроса" />
+            <p id="tooltip" class="tooltip__text">Чтобы поменять расположение текста или удалить его, сначала нажмите<br>на нужный текст</p>
+          </div>
+        </div>
         <div class="editor-tools__layout-button-container">
           <button id="align-top" class="editor-tools__text-layout-button editor-tools__text-layout-button_top"></button>
           <button id="align-right" class="editor-tools__text-layout-button editor-tools__text-layout-button_right"></button>
@@ -74,7 +80,7 @@
       <div>
         <button id="delete-btn" class="editor-tools__button">Удалить текст</button>
       </div>
-      <button id="save-meme-btn" class="editor-tools__save-button">Сохранить</button>
+      <button id="save-meme-btn" class="editor-tools__save-button">Сохранить мем</button>
     </section>
     <footer class="footer page__footer">
       <p class="footer__text">Генератор мемов, Архипова Мария для WB</p>
