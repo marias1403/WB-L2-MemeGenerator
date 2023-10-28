@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
     canvas.height = memeContainer.offsetHeight;
     const ctx = canvas.getContext("2d");
 
-    ctx.drawImage(memeImage, 0, 0, memeImage.width, memeImage.height);
+    ctx.drawImage(memeImage, 0, 0);
 
     // Отрисовываем текстовые элементы на холсте
     const textElements = document.querySelectorAll(".text-element");
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const font = element.style.fontStyle + ' ' + element.style.fontWeight + ' ' + element.style.fontSize + ' ' + element.style.fontFamily;
       ctx.font = `${font}`;
       ctx.fillStyle = element.style.color;
-      ctx.fillText(element.innerText, parseInt(element.style.left), parseInt(element.style.top));
+      ctx.fillText(element.innerText, parseInt(element.style.left), parseInt(element.style.top) + parseInt(element.style.fontSize));
     });
 
     const memeDataURL = canvas.toDataURL("image/png");
