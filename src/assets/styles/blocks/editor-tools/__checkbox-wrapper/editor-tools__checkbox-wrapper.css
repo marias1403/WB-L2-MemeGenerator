@@ -1,8 +1,7 @@
-.editor-tools__typography {
-  margin-top: 10px;
+.editor-tools__checkbox-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  gap: 30px;
+  column-gap: 8px;
 }

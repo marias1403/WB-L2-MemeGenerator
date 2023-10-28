@@ -1,9 +1,9 @@
 import '../assets/styles/index.css';
 
 document.addEventListener('DOMContentLoaded', () => {
-  const selectBox = document.querySelector('.custom-select .select-box');
-  const options = document.querySelectorAll('.custom-select .options .option');
-  const hiddenSelect = document.querySelector('.custom-select .hidden-select');
+  const selectBox = document.querySelector('.select .select-box');
+  const options = document.querySelectorAll('.select .options .option');
+  const hiddenSelect = document.querySelector('.select .hidden-select');
 
   selectBox.addEventListener('click', () => {
     selectBox.classList.toggle('active');

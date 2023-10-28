@@ -23,9 +23,8 @@
           minlength="1"
           maxlength="100"
         />
-        <button id="add-text-btn" class="editor-tools__button">Добавить</button>
       </div>
-      <div>
+      <div class="editor-tools__color-change">
         <label class="editor-tools__title" for="text-color">Цвет</label>
         <input type="color" id="text-color" value="#ffffff">
       </div>
@@ -33,39 +32,36 @@
         <label class="editor-tools__title" for="edit-font">Шрифт</label>
         <label class="editor-tools__title" for="edit-text-size">и размер</label>
         <div class="editor-tools__font-size-controls">
-          <div class="custom-select">
-            <select id="edit-font">
-              <option value="Arial">Arial</option>
-              <option value="Comic Sans">Comic Sans</option>
-              <option value="Courier New">Courier New</option>
-              <option value="Georgia">Georgia</option>
-            </select>
-            <div class="select-box">
-              <span class="selected-option">Arial</span>
-              <ul class="options">
-                <li class="option" data-value="0">Arial</li>
-                <li class="option" data-value="1">Comic Sans</li>
-                <li class="option" data-value="2">Courier New</li>
-                <li class="option" data-value="3">Georgia</li>
-              </ul>
-            </div>
-          </div>
+          <select class="select" id="edit-font">
+            <option value="Arial">Arial</option>
+            <option value="Comic Sans">Comic Sans</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Georgia">Georgia</option>
+          </select>
           <div class="text-size-input">
             <button class="text-size-input__button" data-action="minus" type="button">–</button>
-            <input class="text-size-input__count" id="edit-text-size" type="text" name="text-size" min="8" max="96" value="16">
+            <input class="text-size-input__count" id="edit-text-size" type="text" name="text-size" min="8" max="96" value="16" disabled>
             <button class="text-size-input__button" data-action="add" type="button">+</button>
           </div>
         </div>
       </div>
-      <div>
-        <h3 class="editor-tools__title">Жирность и курсив</h3>
-        <div class="editor-tools__typography">
-          <label for="bold">Жирный:</label>
-          <input type="checkbox" id="bold">
-          <label for="italic">Курсив:</label>
-          <input type="checkbox" id="italic">
+      <div class="editor-tools__typography">
+        <div class="editor-tools__checkbox-wrapper">
+          <label for="bold" class="editor-tools__title">Жирность</label>
+          <div class="checkbox">
+            <input class="checkbox__input" type="checkbox" id="bold">
+            <span class="checkbox__checkmark"></span>
+          </div>
+        </div>
+        <div class="editor-tools__checkbox-wrapper">
+          <label for="italic" class="editor-tools__title">Курсив</label>
+          <div class="checkbox">
+            <input class="checkbox__input" type="checkbox" id="italic">
+            <span class="checkbox__checkmark"></span>
+          </div>
         </div>
       </div>
+      <button id="add-text-btn" class="editor-tools__button">Добавить текст</button>
       <div>
         <h3 class="editor-tools__title">Расположение текста</h3>
         <div class="editor-tools__layout-button-container">
@@ -76,7 +72,7 @@
         </div>
       </div>
       <div>
-        <button id="delete-btn">Удалить</button>
+        <button id="delete-btn" class="editor-tools__button">Удалить текст</button>
       </div>
       <button id="save-meme-btn" class="editor-tools__save-button">Сохранить</button>
     </section>
@@ -88,8 +84,8 @@
     <div id="meme-container" class="editing-area__container">
       <img id="meme-image">
     </div>
-    <button class="editing-area__button">+ добавить картинку</button>
-    <input type="file" id="image-input" accept="image/*">
+    <label class="editing-area__label" for="image-input">+ добавить картинку</label>
+    <input class="editing-area__file-input" type="file" id="image-input" accept="image/*">
   </div>
 </div>
 </body>

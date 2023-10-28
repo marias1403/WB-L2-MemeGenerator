@@ -1,0 +1,21 @@
+.select {
+  padding: 0 8px;
+  position: relative;
+  width: 220px;
+  height: 35px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #ffffff;
+  outline-color: #7BFF2B;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url('../../../img/down_icon.svg');
+  background-position: 198px center;
+  background-repeat: no-repeat;
+}

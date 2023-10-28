@@ -26,14 +26,18 @@
 @import url(./blocks/editor-tools/__typography/editor-tools__typography.css);
 @import url(./blocks/editor-tools/__typography-button/editor-tools__typography-button.css);
 @import url(./blocks/editor-tools/__typography-button/_italic/editor-tools__typography-button_italic.css);
+@import url(./blocks/editor-tools/__color-change/editor-tools__color-change.css);
+@import url(./blocks/editor-tools/__checkbox-wrapper/editor-tools__checkbox-wrapper.css);
 
-@import url(./blocks/custom-select/custom-select.css);
+@import url(./blocks/checkbox/checkbox.css);
+@import url(./blocks/select/select.css);
 @import url(./blocks/text-size-input/text-size-input.css);
 @import url(./blocks/editor-tools/__font-size-controls/editor-tools__font-size-controls.css);
 
 @import url(./blocks/editing-area/editing-area.css);
 @import url(./blocks/editing-area/__container/editing-area__container.css);
-@import url(./blocks/editing-area/__button/editing-area__button.css);
+@import url(./blocks/editing-area/__label/editing-area__label.css);
+@import url(./blocks/editing-area/__file-input/editing-area__file-input.css);
 
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/page/__footer/page__footer.css);
