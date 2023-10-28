@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const alignRightBtn = document.getElementById("align-right");
   const saveMemeBtn = document.getElementById("save-meme-btn");
   const deleteTxtBtn = document.getElementById("delete-btn");
+  const memeImage = document.getElementById("meme-image");
 
   function addText() {
     const text = document.getElementById("text-input").value;
@@ -63,7 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function saveMeme() {
-    const memeImage = document.getElementById("meme-image");
     const canvas = document.createElement("canvas");
     canvas.width = memeContainer.offsetWidth;
     canvas.height = memeContainer.offsetHeight;
@@ -90,7 +90,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const imageInput = document.getElementById("image-input");
   imageInput.addEventListener("change", function() {
-    const memeImage = document.getElementById("meme-image");
     const file = imageInput.files[0];
 
     if (file) {
@@ -144,6 +143,11 @@ document.addEventListener('DOMContentLoaded', () => {
     selectedTextElement.remove();
     selectedTextElement = null;
   });
+
+  memeImage.onload = function() {
+    memeContainer.style.width = memeImage.width + "px";
+    memeContainer.style.height = memeImage.height + "px";
+  };
 
   const tooltipIcon = document.getElementById('tooltip-icon');
   const tooltip = document.getElementById('tooltip');

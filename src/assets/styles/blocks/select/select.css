@@ -1,7 +1,7 @@
 .select {
   padding: 0 8px;
   position: relative;
-  width: 220px;
+  width: 200px;
   height: 35px;
   border: 1px solid #ffffff;
   background-color: transparent;
@@ -16,6 +16,6 @@
   -moz-appearance: none;
   appearance: none;
   background-image: url('../../../img/down_icon.svg');
-  background-position: 198px center;
+  background-position: 175px center;
   background-repeat: no-repeat;
 }

@@ -1,0 +1,16 @@
+.editor-tools__size-input {
+  padding: 10px;
+  width: 90px;
+  height: 35px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  overflow: hidden;
+  color: #ffffff;
+  outline-color: #7BFF2B;
+  box-sizing: border-box;
+}

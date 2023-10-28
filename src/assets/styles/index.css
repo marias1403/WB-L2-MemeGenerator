@@ -4,6 +4,7 @@
 @import url(./blocks/page/page.css);
 @import url(./blocks/page/__container/page__container.css);
 @import url(./blocks/page/__aside/page__aside.css);
+@import url(./blocks/page/__editors-tools/page__editors-tools.css);
 
 @import url(./blocks/text-element/text-element.css);
 
@@ -25,11 +26,11 @@
 @import url(./blocks/editor-tools/__typography-button/editor-tools__typography-button.css);
 @import url(./blocks/editor-tools/__typography-button/_italic/editor-tools__typography-button_italic.css);
 @import url(./blocks/editor-tools/__wrapper/editor-tools__wrapper.css);
+@import url(./blocks/editor-tools/__size-input/editor-tools__size-input.css);
 
 @import url(./blocks/button/button.css);
 @import url(./blocks/checkbox/checkbox.css);
 @import url(./blocks/select/select.css);
-@import url(./blocks/text-size-input/text-size-input.css);
 @import url(./blocks/editor-tools/__font-size-controls/editor-tools__font-size-controls.css);
 
 @import url(./blocks/editing-area/editing-area.css);
