@@ -8,95 +8,89 @@
   <title lang="ru">Архипова Мария, Генератор мемов</title>
 </head>
 <body class="page">
-  <div class="page__container">
-    <div class="page__aside">
-      <header class="header">
-        <img class="header__logo" src="<%=require('./assets/img/logo.svg')%>" alt="Лого" />
-      </header>
-      <section class="editor-tools page__section">
-        <div>
-          <label class="editor-tools__title" for="text-input">Введите текст</label>
-          <input
-            class="editor-tools__text-input"
-            id="text-input"
-            type="text"
-            minlength="1"
-            maxlength="100"
-          />
-          <button class="editor-tools__button">Добавить</button>
-        </div>
-        <div>
-          <label class="editor-tools__title" for="edit-font">Шрифт</label>
-          <label class="editor-tools__title" for="edit-text-size">и размер</label>
-          <div class="editor-tools__font-size-controls">
-            <div class="custom-select">
-              <select id="edit-font" class="hidden-select">
-                <option value="0">Arial</option>
-                <option value="1">Comic Sans</option>
-                <option value="2">Courier New</option>
-                <option value="3">Georgia</option>
-              </select>
-              <div class="select-box">
-                <span class="selected-option">Arial</span>
-                <ul class="options">
-                  <li class="option" data-value="0">Arial</li>
-                  <li class="option" data-value="1">Comic Sans</li>
-                  <li class="option" data-value="2">Courier New</li>
-                  <li class="option" data-value="3">Georgia</li>
-                </ul>
-              </div>
-            </div>
-            <div class="text-size-input">
-              <button class="text-size-input__button" data-action="minus" type="button">–</button>
-              <input class="text-size-input__count" id="edit-text-size" type="text" name="text-size" min="8" max="96" value="16" disabled>
-              <button class="text-size-input__button" data-action="add" type="button">+</button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <h3 class="editor-tools__title">Жирность и курсив</h3>
-          <div class="editor-tools__typography">
-            <button class="editor-tools__typography-button">B</button>
-            <button class="editor-tools__typography-button editor-tools__typography-button_italic">I</button>
-          </div>
-        </div>
-        <div>
-          <label class="editor-tools__title" for="text-align">Выравнивание текста</label>
-          <div class="custom-select editor-tools__select">
+<div class="page__container">
+  <div class="page__aside">
+    <header class="header">
+      <img class="header__logo" src="<%=require('./assets/img/logo.svg')%>" alt="Лого" />
+    </header>
+    <section class="editor-tools page__section">
+      <div>
+        <label class="editor-tools__title" for="text-input">Введите текст</label>
+        <input
+          class="editor-tools__text-input"
+          id="text-input"
+          type="text"
+          minlength="1"
+          maxlength="100"
+        />
+        <button id="add-text-btn" class="editor-tools__button">Добавить</button>
+      </div>
+      <div>
+        <label class="editor-tools__title" for="text-color">Цвет</label>
+        <input type="color" id="text-color" value="#ffffff">
+      </div>
+      <div>
+        <label class="editor-tools__title" for="edit-font">Шрифт</label>
+        <label class="editor-tools__title" for="edit-text-size">и размер</label>
+        <div class="editor-tools__font-size-controls">
+          <div class="custom-select">
+            <select id="edit-font">
+              <option value="Arial">Arial</option>
+              <option value="Comic Sans">Comic Sans</option>
+              <option value="Courier New">Courier New</option>
+              <option value="Georgia">Georgia</option>
+            </select>
             <div class="select-box">
-              <span class="selected-option">по центру</span>
+              <span class="selected-option">Arial</span>
               <ul class="options">
-                <li class="option" data-value="0">по центру</li>
-                <li class="option" data-value="1">по левому краю</li>
-                <li class="option" data-value="2">по правому краю</li>
+                <li class="option" data-value="0">Arial</li>
+                <li class="option" data-value="1">Comic Sans</li>
+                <li class="option" data-value="2">Courier New</li>
+                <li class="option" data-value="3">Georgia</li>
               </ul>
             </div>
-            <select id="text-align" class="hidden-select">
-              <option value="0">по центру</option>
-              <option value="1">по левому краю</option>
-              <option value="2">по правому краю</option>
-            </select>
+          </div>
+          <div class="text-size-input">
+            <button class="text-size-input__button" data-action="minus" type="button">–</button>
+            <input class="text-size-input__count" id="edit-text-size" type="text" name="text-size" min="8" max="96" value="16">
+            <button class="text-size-input__button" data-action="add" type="button">+</button>
           </div>
         </div>
-        <div>
-          <h3 class="editor-tools__title">Расположение текста</h3>
-          <div class="editor-tools__layout-button-container">
-            <button class="editor-tools__text-layout-button editor-tools__text-layout-button_top"></button>
-            <button class="editor-tools__text-layout-button editor-tools__text-layout-button_right"></button>
-            <button class="editor-tools__text-layout-button editor-tools__text-layout-button_down"></button>
-            <button class="editor-tools__text-layout-button editor-tools__text-layout-button_left"></button>
-          </div>
+      </div>
+      <div>
+        <h3 class="editor-tools__title">Жирность и курсив</h3>
+        <div class="editor-tools__typography">
+          <label for="bold">Жирный:</label>
+          <input type="checkbox" id="bold">
+          <label for="italic">Курсив:</label>
+          <input type="checkbox" id="italic">
         </div>
-        <button class="editor-tools__save-button">Сохранить</button>
-      </section>
-      <footer class="footer page__footer">
-        <p class="footer__text">Генератор мемов, Архипова Мария для WB</p>
-      </footer>
-    </div>
-    <div class="editing-area">
-      <div class="editing-area__container"></div>
-      <button class="editing-area__button">+ добавить картинку</button>
-    </div>
+      </div>
+      <div>
+        <h3 class="editor-tools__title">Расположение текста</h3>
+        <div class="editor-tools__layout-button-container">
+          <button id="align-top" class="editor-tools__text-layout-button editor-tools__text-layout-button_top"></button>
+          <button id="align-right" class="editor-tools__text-layout-button editor-tools__text-layout-button_right"></button>
+          <button id="align-down" class="editor-tools__text-layout-button editor-tools__text-layout-button_down"></button>
+          <button id="align-left" class="editor-tools__text-layout-button editor-tools__text-layout-button_left"></button>
+        </div>
+      </div>
+      <div>
+        <button id="delete-btn">Удалить</button>
+      </div>
+      <button id="save-meme-btn" class="editor-tools__save-button">Сохранить</button>
+    </section>
+    <footer class="footer page__footer">
+      <p class="footer__text">Генератор мемов, Архипова Мария для WB</p>
+    </footer>
   </div>
+  <div class="editing-area">
+    <div id="meme-container" class="editing-area__container">
+      <img id="meme-image">
+    </div>
+    <button class="editing-area__button">+ добавить картинку</button>
+    <input type="file" id="image-input" accept="image/*">
+  </div>
+</div>
 </body>
 </html>
